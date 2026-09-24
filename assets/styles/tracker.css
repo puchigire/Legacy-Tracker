@@ -1,0 +1,554 @@
+.bump {
+    margin-top: 20px;
+}
+
+.btn-wrapper {
+    display: inline-block;
+    position: relative;
+    margin: 3px;
+}
+
+.counter {
+    color: rgb(250, 250, 250);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    position: absolute;
+    right: 2px;
+    bottom: -5px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* modal item window */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    margin-right: -17px;
+}
+
+.smallFrame {
+    border: solid 2px #939388;
+    border-radius: 10px;
+    background-color: #0f0f3d;
+    box-shadow: 0 0.1em 0.3em 0.1em rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 250px;
+    /* margin: 15% auto; */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* top row - icon/title */
+
+#titleBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #080824;
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.6);
+    border-radius: 3px;
+    padding: 1px;
+}
+
+#icon {
+    border: solid 1px rgba(147, 147, 136, 0.8);
+    border-radius: 10px;
+    background-image: url();
+    box-shadow: 0 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.425);
+    flex-shrink: 0;
+    height: 78px;
+    width: 78px;
+    margin: 10px;
+    background-repeat: no-repeat;
+}
+
+#itemTitle {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+
+/* bottom row - quantity */
+
+#subBlock {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+    margin-top: -5px;
+    padding: 1px;
+    user-select: none;
+}
+
+#quantity {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#num {
+    color: white;
+    font-size: 1.8em;
+    text-align: center;
+    padding-left: 35px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 772px) {
+    h1 {
+        text-align: center;
+        font-size: 3.2em;
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media screen and (max-width: 452px) {
+    .main {
+        width: 370px;
+    }
+
+    .smallFrame {
+        width: 350px;
+    }
+
+    .modal {
+        margin: 0;
+    }
+
+    #itemTitle {
+        font-size: 1.3em;
+    }
+
+    .box {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .main {
+        width: 340px;
+    }
+
+    .navBtn {
+        max-width: 300px;
+    }
+}
+/* local collection behavior */
+.tracker-help {
+    color: rgb(250, 250, 250);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    margin: 0 auto 18px;
+    max-width: 620px;
+    padding: 0 18px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.item-row {
+    white-space: nowrap;
+}
+
+.item-button {
+    transition: filter 140ms ease, opacity 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.item-button.unowned {
+    filter: grayscale(100%) brightness(.55);
+    opacity: .82;
+}
+
+.item-button.owned {
+    filter: none;
+    opacity: 1;
+}
+
+.item-button.blank-item,
+.item-button.blank-item:hover {
+    filter: none;
+    opacity: 1;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.modal.is-open {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.smallFrame {
+    height: auto;
+    min-height: 250px;
+    padding-bottom: 14px;
+}
+
+.close-modal {
+    background: none;
+    border: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 4px 10px;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    z-index: 2;
+}
+
+.close-modal:hover,
+.close-modal:focus-visible {
+    border: 0;
+    box-shadow: none;
+    color: #fff8cc;
+    outline: 2px solid #fff8cc;
+    outline-offset: 0;
+}
+
+#subBlock {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+#quantity {
+    color: white;
+    font-size: 1.45em;
+    text-align: center;
+}
+
+.quantity-editor {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quantity-button {
+    background-image: none;
+    background-color: #080824;
+    border: solid 2px #939388;
+    border-radius: 8px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.7rem;
+    height: 48px;
+    line-height: 1;
+    padding: 0;
+    width: 48px;
+}
+
+#num {
+    -moz-appearance: textfield;
+    background: #080824;
+    border: solid 2px #939388;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.65rem;
+    height: 48px;
+    padding: 4px 8px;
+    text-align: center;
+    width: 110px;
+}
+
+#num::-webkit-inner-spin-button,
+#num::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#num:focus-visible,
+.quantity-button:focus-visible {
+    border-color: #fff8cc;
+    box-shadow: 0 0 .6em #fff8cc;
+    outline: none;
+}
+
+#saveStatus {
+    color: #d9e2dc;
+    font-family: Arial, sans-serif;
+    font-size: .85rem;
+    margin: 0;
+    text-align: center;
+}
+
+#saveStatus.save-error {
+    color: #ffd2d2;
+    max-width: 340px;
+}
+
+@media screen and (max-width: 452px) {
+    .tracker-help {
+        max-width: 330px;
+    }
+}
+
+.modal {
+    inset: 0;
+    margin: 0;
+}
+
+.multi-nav {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.compact-nav {
+    width: 18em;
+}
+
+@media screen and (max-width: 452px) {
+    .compact-nav {
+        width: 300px;
+    }
+}
+
+/* Five-slot rows to mirror an in-game retainer/bank row. */
+.item-row {
+    display: grid;
+    grid-template-columns: repeat(5, 88px);
+    justify-content: center;
+}
+
+.main {
+    width: 560px;
+    max-width: calc(100vw - 24px);
+}
+
+.box {
+    overflow-x: auto;
+}
+
+.inner {
+    min-width: 440px;
+}
+
+@media screen and (max-width: 452px) {
+    .main {
+        max-width: calc(100vw - 12px);
+        width: auto;
+    }
+
+    .box {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .inner {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+
+/* HQ glow for discontinued consumables tracked as HQ-only. */
+.btn-wrapper {
+    isolation: isolate;
+}
+
+.legacy-hq-glow,
+.modal-hq-glow {
+    background-image: url('../images/hq-glow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.legacy-hq-glow {
+    inset: 3px;
+}
+
+#icon {
+    isolation: isolate;
+    position: relative;
+}
+
+.modal-hq-glow {
+    inset: 0;
+}
+
+.legacy-hq-glow[hidden],
+.modal-hq-glow[hidden] {
+    display: none;
+}
+
+.counter {
+    z-index: 3;
+}
+
+.item-button.direct-item-icon,
+#icon.direct-item-icon {
+    background-color: #080824;
+}
+
+/* Priority collection items use a red zero-state so missing pieces stand out
+   from the normal gray/unowned treatment. This overlay sits outside the
+   grayscale-filtered button, so the red remains visible even at quantity 0. */
+.legacy-red-zero {
+    background: rgba(185, 20, 20, .42);
+    border: 2px solid rgba(255, 86, 86, .62);
+    border-radius: .55em;
+    box-shadow:
+        inset 0 0 13px rgba(120, 0, 0, .72),
+        0 0 7px rgba(220, 25, 25, .48);
+    inset: 3px;
+    pointer-events: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.legacy-red-zero[hidden] {
+    display: none;
+}
+
+
+.collection-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0 8px;
+}
+
+.tool-button {
+    background-image: none;
+    background-color: rgba(12, 18, 46, 0.92);
+    border: 2px solid #939388;
+    border-radius: 8px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    padding: 14px 20px;
+}
+
+.tool-help,
+.tracker-help {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0 auto 10px;
+    max-width: 900px;
+    text-align: center;
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+.tool-help {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+
+.readonly-count {
+    color: #f1f1f1;
+    display: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    margin: 12px 0 0;
+    text-align: center;
+}
+
+.read-only-mode .readonly-count {
+    display: block;
+}
+
+.read-only-mode #quantity,
+.read-only-mode .quantity-editor,
+.read-only-mode #saveStatus,
+.read-only-mode .universalis-link,
+.read-only-mode .item-meta {
+    display: none !important;
+}
+
+.hosted-note {
+    margin-bottom: 18px;
+}
+
+html {
+    scrollbar-gutter: stable;
+}
+
+.top-nav {
+    margin-top: 0;
+    padding-bottom: 0;
+}
+
+.top-nav .compact-nav {
+    width: 10.5em;
+}
+
+@media screen and (max-width: 452px) {
+    .top-nav .compact-nav {
+        width: 300px;
+    }
+}
+
+
+/* Center compact page navigation labels independently of the legacy button padding. */
+.top-nav a {
+    display: block;
+    text-decoration: none;
+}
+
+.top-nav .compact-nav {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    min-height: 58px;
+    padding: 0 18px;
+}
+
+.top-nav .navText {
+    display: block;
+    line-height: 1.15;
+    text-align: center;
+    width: 100%;
+}
+
+/* Item-window text should remain selectable/copyable. */
+.smallFrame,
+.smallFrame #titleBlock,
+.smallFrame #itemTitle,
+.smallFrame #itemTitle h2,
+.smallFrame .item-meta,
+.smallFrame #subBlock,
+.smallFrame #quantity,
+.smallFrame #readonlyCount,
+.smallFrame #saveStatus,
+.smallFrame .universalis-link {
+    -webkit-user-select: text;
+    user-select: text;
+}
+
+
+/* Header navigation sizing */
+.multi-nav {
+    flex-wrap: wrap;
+}
+.compact-nav {
+    width: 13em;
+}
+@media (max-width: 720px) {
+    .compact-nav { width: 10.5em; }
+}
+@media (max-width: 560px) {
+    .compact-nav { width: 9em; }
+}

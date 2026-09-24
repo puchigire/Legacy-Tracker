@@ -1,0 +1,75 @@
+
+.about-section {
+    margin: 0 auto;
+    max-width: 760px;
+    padding: 6px 28px 12px;
+}
+.about-heading {
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    margin: 8px 0 10px;
+    text-align: center;
+}
+.aboutText {
+    color: white;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    margin: 0;
+    padding: 3px;
+    text-align: left;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.creditText, .timestampText { text-align: center; }
+.about-divider {
+    border: 0;
+    border-top: 1px solid rgba(199, 199, 186, .7);
+    margin: 12px auto;
+    width: calc(100% - 64px);
+}
+.timestamp-heading { font-size: 1.55rem; }
+.timestamp-section { padding-bottom: 24px; }
+@media (max-width: 520px) {
+    .about-section { padding-left: 18px; padding-right: 18px; }
+    .aboutText { font-size: 1.05rem; }
+}
+\n\n/* About begins directly with its title and ends with a Home button. */
+.aboutPad {
+    padding: 24px 28px 28px;
+}
+.aboutPad .about-section:first-child {
+    padding-top: 0;
+}
+.aboutPad .about-heading:first-child {
+    font-size: 2.35rem;
+    margin-top: 0;
+}
+.about-title-divider {
+    margin: 8px auto 18px;
+    width: calc(100% - 64px);
+}
+.about-home-nav {
+    display: flex;
+    justify-content: center;
+    margin: 4px auto 4px;
+}
+.about-home-nav a {
+    text-decoration: none;
+}
+.about-home-button {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    min-height: 54px;
+    padding: 0 18px;
+    width: 12em;
+}
+.about-home-button .navText {
+    display: block;
+    font-size: 1.55em;
+    line-height: 1.15;
+    text-align: center;
+    width: 100%;
+}
