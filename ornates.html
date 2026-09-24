@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>FFXIV Legacy Tracker | Ornates &amp; Augmented</title>
+<link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="assets/styles/styles.css" rel="stylesheet"/>
+<link href="assets/styles/tracker.css" rel="stylesheet"/>
+<link href="assets/styles/ornates.css" rel="stylesheet"/>
+<script defer="" src="assets/js/ornates-items.js"></script>
+<script defer="" src="assets/js/ornates-app.js"></script>
+</head>
+<body data-mode="readonly" data-snapshot="collection-data.json">
+<div class="container flex">
+<main class="ornates-shell"><header class="site-header ornates-header">
+<h1 class="ornates-page-title">Ornates &amp; Augmented Gear</h1>
+<p class="site-identity">IGN: Boari Hun@Masamune</p>
+<p class="site-identity">Discord: edge_knight</p>
+</header><div aria-label="Site navigation" class="nav multi-nav top-nav">
+<a href="index.html"><button class="navBtn compact-nav" type="button"><span class="navText">Home</span></button></a>
+<a href="tracker.html"><button class="navBtn compact-nav" type="button"><span class="navText">Items</span></button></a>
+<a href="about.html"><button class="navBtn compact-nav" type="button"><span class="navText">About</span></button></a>
+</div>
+<div aria-live="polite" class="collection-summary">
+<span id="ownedSummary">0 of 121 items obtained</span>
+<span aria-hidden="true" class="summary-divider">•</span>
+<span id="quantitySummary">0 total pieces</span>
+</div>
+<div id="ornateSets"></div>
+<footer>
+
+<p class="trademark">FINAL FANTASY XIV © 2010 - 2026 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+</footer>
+</main>
+<div aria-hidden="true" aria-labelledby="itemTitle" aria-modal="true" class="modal" role="dialog">
+<div class="smallFrame">
+<button aria-label="Close item window" class="close-modal" id="closeModal" type="button">×</button>
+<div id="titleBlock">
+<div aria-hidden="true" id="icon"><img alt="" id="modalIconImage"/><span class="modal-hq-glow" hidden="" id="modalHqGlow"></span></div>
+<div id="itemTitle"><h2></h2></div>
+</div>
+<div class="item-meta" id="itemMeta"></div>
+<div id="subBlock">
+<label for="num" id="quantity">Quantity</label>
+<div class="quantity-editor">
+<button aria-label="Decrease quantity" class="quantity-button" id="decrementQuantity" type="button">−</button>
+<input autocomplete="off" id="num" inputmode="numeric" min="0" step="1" type="number"/>
+<button aria-label="Increase quantity" class="quantity-button" id="incrementQuantity" type="button">+</button>
+</div>
+<p class="readonly-count" hidden="" id="readonlyCount"></p>
+<p aria-live="polite" id="saveStatus"></p>
+<a class="universalis-link" href="#" id="universalisLink" rel="noreferrer" target="_blank">View item on Universalis</a>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
