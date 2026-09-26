@@ -18,7 +18,6 @@
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-/* modal item window */
 
 .modal {
     display: none;
@@ -37,14 +36,13 @@
     box-shadow: 0 0.1em 0.3em 0.1em rgba(0, 0, 0, 0.6);
     width: 400px;
     height: 250px;
-    /* margin: 15% auto; */
+    
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* top row - icon/title */
 
 #titleBlock {
     display: flex;
@@ -80,7 +78,6 @@
     padding-right: 5px;
 }
 
-/* bottom row - quantity */
 
 #subBlock {
     display: flex;
@@ -105,7 +102,6 @@
     padding-left: 35px;
 }
 
-/* media queries */
 
 @media screen and (max-width: 772px) {
     h1 {
@@ -146,7 +142,7 @@
         max-width: 300px;
     }
 }
-/* local collection behavior */
+
 .tracker-help {
     color: rgb(250, 250, 250);
     font-family: Georgia, 'Times New Roman', serif;
@@ -320,7 +316,7 @@
     }
 }
 
-/* Five-slot rows to mirror an in-game retainer/bank row. */
+
 .item-row {
     display: grid;
     grid-template-columns: repeat(5, 88px);
@@ -357,7 +353,7 @@
     }
 }
 
-/* HQ glow for discontinued consumables tracked as HQ-only. */
+
 .btn-wrapper {
     isolation: isolate;
 }
@@ -401,9 +397,7 @@
     background-color: #080824;
 }
 
-/* Priority collection items use a red zero-state so missing pieces stand out
-   from the normal gray/unowned treatment. This overlay sits outside the
-   grayscale-filtered button, so the red remains visible even at quantity 0. */
+
 .legacy-red-zero {
     background: rgba(185, 20, 20, .42);
     border: 2px solid rgba(255, 86, 86, .62);
@@ -501,7 +495,6 @@ html {
 }
 
 
-/* Center compact page navigation labels independently of the legacy button padding. */
 .top-nav a {
     display: block;
     text-decoration: none;
@@ -523,7 +516,7 @@ html {
     width: 100%;
 }
 
-/* Item-window text should remain selectable/copyable. */
+
 .smallFrame,
 .smallFrame #titleBlock,
 .smallFrame #itemTitle,
@@ -539,7 +532,6 @@ html {
 }
 
 
-/* Header navigation sizing */
 .multi-nav {
     flex-wrap: wrap;
 }
@@ -553,7 +545,7 @@ html {
     .compact-nav { width: 9em; }
 }
 
-/* Raw artwork extracted from ffxiv-fail.cur marks database-only / probably nonexistent items. */
+
 .legacy-red-zero::after {
     background: url('../images/fail-marker.png') center / 32px 32px no-repeat;
     content: '';

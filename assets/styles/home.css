@@ -19,7 +19,6 @@
     padding: 20px 30px 30px 30px;
 }
 
-/* media queries */
 
 @media (max-width: 872px) {
     .homeBox {
@@ -69,7 +68,7 @@
         padding: 0px 10px 10px 10px;
     }
 }
-/* Three-page local tracker navigation */
+
 .homeBox .navBtn {
     width: 16em;
 }
@@ -143,7 +142,6 @@
 }
 
 
-/* Reference-style home header */
 .secondMain {
     box-sizing: border-box;
     width: min(900px, calc(100vw - 32px));
@@ -159,7 +157,7 @@
     margin-top: 20px;
     padding-top: 20px;
 }
-\n\n/* Compact bordered navigation panel restored on Home. */
+
 .innerHome {
     margin: 0;
 }

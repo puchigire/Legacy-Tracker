@@ -75,7 +75,7 @@ button {
     border: 3.5px solid transparent;
     border-radius: .6em;
     padding: 2.8em;
-    /* transition: all 0.2s; */
+    
     background-repeat: no-repeat;
 }
 
@@ -188,7 +188,6 @@ code {
 }
 
 
-/* Shared collection identity header */
 .site-header {
     color: #fff;
     margin: 0 auto 14px;
@@ -244,13 +243,13 @@ code {
     .top-nav { gap: 8px; }
 }
 
-/* FFXIV cursor set. Keep each role isolated so individual cursor files can be swapped later. */
+
 html,
 body {
     cursor: url('../cursors/primary.cur'), auto;
 }
 
-/* Normal controls keep the primary cursor unless a more specific role applies. */
+
 button,
 input,
 select,
@@ -258,13 +257,13 @@ textarea {
     cursor: url('../cursors/primary.cur'), auto;
 }
 
-/* Anything that navigates to another page/site uses the link cursor. */
+
 a[href],
 a[href] * {
     cursor: url('../cursors/link.cur'), pointer !important;
 }
 
-/* Collection items use the question cursor. */
+
 .item-button:not(.blank-item),
 .item-button:not(.blank-item) *,
 .ornate-tile,
@@ -272,7 +271,7 @@ a[href] * {
     cursor: url('../cursors/question.cur'), help !important;
 }
 
-/* Selectable/copyable text uses the select cursor. */
+
 .site-identity,
 .aboutText,
 .timestampText,
@@ -288,13 +287,13 @@ a[href] * {
     cursor: url('../cursors/select.cur'), text;
 }
 
-/* Navigation links retain the link cursor even when they contain text. */
+
 a[href] .navText,
 a[href].universalis-link {
     cursor: url('../cursors/link.cur'), pointer !important;
 }
 
-/* Used during real page/data loading. */
+
 html.site-loading,
 html.site-loading *,
 html.site-loading body,
