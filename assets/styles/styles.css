@@ -2,7 +2,6 @@ body,
 html {
     margin: 0;
     padding: 0;
-    cursor: url('../images/glove-lg.png'), auto;
 }
 
 .container {
@@ -83,7 +82,6 @@ button {
 button:hover {
     border-color: #fff8cc;
     box-shadow: 0em 0em 1em 0em #fff8cc;
-    cursor: url('../images/glove-lg.png'), auto;
 }
 
 footer {
@@ -245,3 +243,62 @@ code {
     .site-header h1 { font-size: 2.5em; }
     .top-nav { gap: 8px; }
 }
+
+/* FFXIV cursor set. Keep each role isolated so individual cursor files can be swapped later. */
+html,
+body {
+    cursor: url('../cursors/primary.cur'), auto;
+}
+
+/* Normal controls keep the primary cursor unless a more specific role applies. */
+button,
+input,
+select,
+textarea {
+    cursor: url('../cursors/primary.cur'), auto;
+}
+
+/* Anything that navigates to another page/site uses the link cursor. */
+a[href],
+a[href] * {
+    cursor: url('../cursors/link.cur'), pointer !important;
+}
+
+/* Collection items use the question cursor. */
+.item-button:not(.blank-item),
+.item-button:not(.blank-item) *,
+.ornate-tile,
+.ornate-tile * {
+    cursor: url('../cursors/question.cur'), help !important;
+}
+
+/* Selectable/copyable text uses the select cursor. */
+.site-identity,
+.aboutText,
+.timestampText,
+.trademark,
+.smallFrame #itemTitle,
+.smallFrame #itemTitle *,
+.smallFrame .item-meta,
+.smallFrame #quantity,
+.smallFrame #readonlyCount,
+.smallFrame #saveStatus,
+.smallFrame input,
+.smallFrame .universalis-link {
+    cursor: url('../cursors/select.cur'), text;
+}
+
+/* Navigation links retain the link cursor even when they contain text. */
+a[href] .navText,
+a[href].universalis-link {
+    cursor: url('../cursors/link.cur'), pointer !important;
+}
+
+/* Used during real page/data loading. */
+html.site-loading,
+html.site-loading *,
+html.site-loading body,
+html.site-loading body * {
+    cursor: url('../cursors/wait.cur'), wait !important;
+}
+

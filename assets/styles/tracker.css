@@ -552,3 +552,17 @@ html {
 @media (max-width: 560px) {
     .compact-nav { width: 9em; }
 }
+
+/* Raw artwork extracted from ffxiv-fail.cur marks database-only / probably nonexistent items. */
+.legacy-red-zero::after {
+    background: url('../images/fail-marker.png') center / 32px 32px no-repeat;
+    content: '';
+    height: 32px;
+    pointer-events: none;
+    position: absolute;
+    right: -12px;
+    top: -12px;
+    width: 32px;
+    z-index: 1;
+}
+

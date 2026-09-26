@@ -475,6 +475,8 @@ function loadSavedQuantities() {
 }
 
 async function loadSnapshotQuantities() {
+    const loadingCursor = window.LegacyTrackerLoadingCursor;
+    loadingCursor?.start();
     try {
         const response = await fetch(SNAPSHOT_FILE, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -483,6 +485,8 @@ async function loadSnapshotQuantities() {
     } catch (error) {
         console.warn('Snapshot collection data could not be loaded.', error);
         return {};
+    } finally {
+        loadingCursor?.stop();
     }
 }
 
