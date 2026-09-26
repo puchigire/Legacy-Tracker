@@ -1,7 +1,130 @@
 const STORAGE_KEY = "ffxiv-legacy-tracker-quantities-v1";
 const APP_MODE = document.body.dataset.mode || "edit";
 const SNAPSHOT_FILE = document.body.dataset.snapshot || "collection-data.json";
-const FALLBACK_ICON = "assets/images/blank.png";
+const ORNATE_SPRITESHEET = "url(assets/images/ornates-spritesheet.png)";
+const ORNATE_SPRITES = Object.freeze({
+    41320: [5, 5],
+    42511: [93, 5],
+    44447: [181, 5],
+    45780: [269, 5],
+    46609: [357, 5],
+    41322: [445, 5],
+    42513: [533, 5],
+    44449: [621, 5],
+    45782: [709, 5],
+    46611: [797, 5],
+    48109: [5, 93],
+    48110: [93, 93],
+    43304: [181, 93],
+    43306: [269, 93],
+    43305: [357, 93],
+    43725: [445, 93],
+    43724: [533, 93],
+    41740: [621, 93],
+    42620: [709, 93],
+    44657: [797, 93],
+    47475: [5, 181],
+    49190: [93, 181],
+    41739: [181, 181],
+    42619: [269, 181],
+    44656: [357, 181],
+    47474: [445, 181],
+    49189: [533, 181],
+    43345: [621, 181],
+    43346: [709, 181],
+    43347: [797, 181],
+    43348: [5, 269],
+    43349: [93, 269],
+    43795: [181, 269],
+    43796: [269, 269],
+    41415: [357, 269],
+    42603: [445, 269],
+    44634: [533, 269],
+    47425: [621, 269],
+    49870: [709, 269],
+    41414: [797, 269],
+    42602: [5, 357],
+    44633: [93, 357],
+    47424: [181, 357],
+    49869: [269, 357],
+    48165: [357, 357],
+    48166: [445, 357],
+    42589: [533, 357],
+    42591: [621, 357],
+    42590: [709, 357],
+    43818: [797, 357],
+    43819: [5, 445],
+    43839: [93, 445],
+    43840: [181, 445],
+    43841: [269, 445],
+    43843: [357, 445],
+    43842: [445, 445],
+    42617: [533, 445],
+    42618: [621, 445],
+    48189: [709, 445],
+    48190: [797, 445],
+    43448: [5, 533],
+    43450: [93, 533],
+    43449: [181, 533],
+    43879: [269, 533],
+    43880: [357, 533],
+    43511: [445, 533],
+    43513: [533, 533],
+    43514: [621, 533],
+    43516: [709, 533],
+    43515: [797, 533],
+    43510: [5, 621],
+    43512: [93, 621],
+    48219: [181, 621],
+    48220: [269, 621],
+    43547: [357, 621],
+    43549: [445, 621],
+    43548: [533, 621],
+    43928: [621, 621],
+    43929: [709, 621],
+    42793: [797, 621],
+    42819: [5, 709],
+    42789: [93, 709],
+    42790: [181, 709],
+    42792: [269, 709],
+    42791: [357, 709],
+    42788: [445, 709],
+    42899: [533, 709],
+    42900: [621, 709],
+    42903: [709, 709],
+    42902: [797, 709],
+    42904: [5, 797],
+    42898: [93, 797],
+    42901: [181, 797],
+    42962: [269, 797],
+    42963: [357, 797],
+    42967: [445, 797],
+    42968: [533, 797],
+    42964: [621, 797],
+    42966: [709, 797],
+    42965: [797, 797],
+    57148: [5, 885],
+    57149: [93, 885],
+    57151: [181, 885],
+    57153: [269, 885],
+    57152: [357, 885],
+    57147: [445, 885],
+    57150: [533, 885],
+    57217: [621, 885],
+    57218: [709, 885],
+    57221: [797, 885],
+    57223: [5, 973],
+    57222: [93, 973],
+    57220: [181, 973],
+    57219: [269, 973],
+    57321: [357, 973],
+    57322: [445, 973],
+    57325: [533, 973],
+    57327: [621, 973],
+    57326: [709, 973],
+    57324: [797, 973],
+    57323: [5, 1061]
+});
 
 const itemTitleModal = document.querySelector("#itemTitle h2");
 const quantityInput = document.querySelector("#num");
@@ -140,29 +263,18 @@ function applySavedQuantity(item) {
     item.quantity = normalizeQuantity(savedQuantities[getItemKey(item)]);
 }
 
-function iconUrl(iconId) {
-    const id = String(iconId).padStart(6, '0');
-    const folder = `${id.slice(0, 3)}000`;
-    const path = `ui/icon/${folder}/${id}_hr1.tex`;
-    return `https://v2.xivapi.com/api/asset?path=${encodeURIComponent(path)}&format=png`;
-}
-
-function localIconUrl(item) {
-    return `assets/images/ornates/${item.icon}.png`;
-}
-
-function setIconSource(image, item) {
-    let triedRemote = false;
-    image.onerror = () => {
-        if (!triedRemote) {
-            triedRemote = true;
-            image.src = iconUrl(item.icon);
-            return;
-        }
-        image.onerror = null;
-        image.src = FALLBACK_ICON;
-    };
-    image.src = localIconUrl(item);
+function setIconSource(element, item) {
+    const sprite = ORNATE_SPRITES[item.icon];
+    element.style.backgroundRepeat = 'no-repeat';
+    element.style.backgroundSize = 'auto';
+    if (!sprite) {
+        element.style.backgroundImage = 'none';
+        element.style.backgroundPosition = 'center';
+        console.warn(`No local ornate sprite position found for ${item.name}.`);
+        return;
+    }
+    element.style.backgroundImage = ORNATE_SPRITESHEET;
+    element.style.backgroundPosition = `-${sprite[0]}px -${sprite[1]}px`;
 }
 
 function isHighQualityItem(item) {
@@ -295,10 +407,9 @@ function renderItems() {
                 const button = document.createElement('button');
                 button.type = 'button';
                 button.className = 'ornate-item-button';
-                const image = document.createElement('img');
-                image.alt = '';
-                image.loading = 'lazy';
-                image.decoding = 'async';
+                const image = document.createElement('span');
+                image.className = 'ornate-sprite-icon';
+                image.setAttribute('aria-hidden', 'true');
                 setIconSource(image, item);
                 const hqGlow = document.createElement('span');
                 hqGlow.className = 'ornate-hq-glow';

@@ -1,3188 +1,1971 @@
 let items = [
   {
-    "name": "blankItem",
-    "category": 11,
-    "priority": 34,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
     "name": "Apprentice's Practice Materials",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 11,
     "priority": 45,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Arrowwood Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ash Plank",
-    "backgroundPosX": -181,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Astral Archon Egg",
-    "backgroundPosX": -269,
-    "backgroundPosY": -5,
     "category": 14,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Augmented Ala Mhigan Bottoms of Crafting",
-    "backgroundPosX": -357,
-    "backgroundPosY": -5,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Augmented Ala Mhigan Doublet of Crafting",
-    "backgroundPosX": -445,
-    "backgroundPosY": -5,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Augmented Ala Mhigan Gloves of Crafting",
-    "backgroundPosX": -533,
-    "backgroundPosY": -5,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Augmented Ala Mhigan Shoes of Crafting",
-    "backgroundPosX": -621,
-    "backgroundPosY": -5,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Augmented Ala Mhigan Turban of Crafting",
-    "backgroundPosX": -709,
-    "backgroundPosY": -5,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Bark Brown Dye",
-    "backgroundPosX": -797,
-    "backgroundPosY": -5,
-    "category": 3,
-    "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Basilisk Leather",
-    "backgroundPosX": -885,
-    "backgroundPosY": -5,
     "category": 6,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Basilisk Skin",
-    "backgroundPosX": -973,
-    "backgroundPosY": -5,
     "category": 6,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Bee Basket",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -5,
     "category": 12,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Biast Skin",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -5,
     "category": 6,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Bind Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -533,
     "category": 9,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Bitter Heart Chocolate",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -5,
     "category": 9,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Bombard Ash",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -5,
     "category": 14,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Drop",
-    "backgroundPosX": -5,
-    "backgroundPosY": -93,
     "category": 9,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Mor Dhonan Slag",
-    "backgroundPosX": -93,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 44,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black O'Ghomoro Slag",
-    "backgroundPosX": -93,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Odoshi Cord",
-    "backgroundPosX": -181,
-    "backgroundPosY": -93,
     "category": 16,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Quartz",
-    "backgroundPosX": -269,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Sagolii Slag",
-    "backgroundPosX": -357,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 32,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Tinolqa Slag",
-    "backgroundPosX": -445,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 37,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Urushi",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -181,
     "category": 16,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Black Usagi Kabuto",
-    "backgroundPosX": -533,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blind Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -621,
     "category": 9,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Blood Red Dye",
-    "backgroundPosX": -621,
-    "backgroundPosY": -93,
-    "category": 3,
-    "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blue Abalathian Slag",
-    "backgroundPosX": -709,
-    "backgroundPosY": -93,
     "category": 15,
     "priority": 40,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blue Archon Egg",
-    "backgroundPosX": -797,
-    "backgroundPosY": -93,
     "category": 14,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blue Bombard Ash",
-    "backgroundPosX": -885,
-    "backgroundPosY": -93,
     "category": 14,
     "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blue Drop",
-    "backgroundPosX": -973,
-    "backgroundPosY": -93,
     "category": 9,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Blue Odoshi Cord",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -93,
     "category": 16,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Bombard Ash",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -93,
     "category": 14,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Box Turtle",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -93,
     "category": 13,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brass Dish",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -93,
     "category": 11,
     "priority": 31,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brass Gobcog",
-    "backgroundPosX": -5,
-    "backgroundPosY": -181,
     "category": 11,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brass Plate",
-    "backgroundPosX": -93,
-    "backgroundPosY": -181,
     "category": 10,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brass Rivets",
-    "backgroundPosX": -181,
-    "backgroundPosY": -181,
     "category": 10,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brilliant Archon Egg",
-    "backgroundPosX": -269,
-    "backgroundPosY": -181,
     "category": 14,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brittle Motley Egg",
-    "backgroundPosX": -357,
-    "backgroundPosY": -181,
     "category": 14,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Bronze Amalj'ok",
-    "backgroundPosX": -445,
-    "backgroundPosY": -181,
     "category": 11,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brown Abalathian Slag",
-    "backgroundPosX": -533,
-    "backgroundPosY": -181,
     "category": 15,
     "priority": 39,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brown O'Ghomoro Slag",
-    "backgroundPosX": -621,
-    "backgroundPosY": -181,
     "category": 15,
     "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brown Sagolii Slag",
-    "backgroundPosX": -709,
-    "backgroundPosY": -181,
     "category": 15,
     "priority": 29,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Brown Tinolqa Slag",
-    "backgroundPosX": -797,
-    "backgroundPosY": -181,
     "category": 15,
     "priority": 34,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Buffalo Hide",
-    "backgroundPosX": -885,
-    "backgroundPosY": -181,
     "category": 6,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Buffalo Horn",
-    "backgroundPosX": -973,
-    "backgroundPosY": -181,
     "category": 1,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Buffalo Leather",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -181,
     "category": 6,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Cedar Plank",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -181,
     "category": 7,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Ceruleum Blue Dye",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -181,
-    "category": 3,
-    "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Chalk",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -181,
     "category": 12,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Cherry Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Chestnut Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Chestnut Log",
-    "backgroundPosX": -181,
-    "backgroundPosY": -269,
     "category": 7,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Chestnut Lumber",
-    "backgroundPosX": -269,
-    "backgroundPosY": -269,
     "category": 7,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Chestnut Plank",
-    "backgroundPosX": -357,
-    "backgroundPosY": -269,
     "category": 7,
     "priority": 29,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Clear Drop",
-    "backgroundPosX": -445,
-    "backgroundPosY": -269,
     "category": 9,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Coal Tar",
-    "backgroundPosX": -621,
-    "backgroundPosY": -269,
     "category": 12,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Cockatrice Feather",
-    "backgroundPosX": -709,
-    "backgroundPosY": -269,
     "category": 2,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Condor Feather",
-    "backgroundPosX": -797,
-    "backgroundPosY": -269,
     "category": 2,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Consecrated Chocolate",
-    "backgroundPosX": -357,
-    "backgroundPosY": -885,
     "category": 9,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Copper Dust",
-    "backgroundPosX": -885,
-    "backgroundPosY": -269,
     "category": 10,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Copper Plate",
-    "backgroundPosX": -973,
-    "backgroundPosY": -269,
     "category": 10,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Copper Rivets",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -269,
     "category": 10,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Cotton Stuffing",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -269,
     "category": 2,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Cracked Shepherd's Belt",
-    "backgroundPosX": -5,
-    "backgroundPosY": -93,
-    "category": 4,
-    "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Dalamud Nut",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -269,
     "category": 5,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Darksteel Amalj'ok",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -269,
     "category": 11,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Deaspected Cluster",
-    "backgroundPosX": -5,
-    "backgroundPosY": -357,
     "category": 11,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Deaspected Crystal",
-    "backgroundPosX": -93,
-    "backgroundPosY": -357,
     "category": 11,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Demonic Cookie",
-    "backgroundPosX": -797,
-    "backgroundPosY": -1325,
     "category": 9,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dexterity Materia VI",
-    "backgroundPosX": -357,
-    "backgroundPosY": -709,
     "category": 8,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dormouse Pelt",
-    "backgroundPosX": -269,
-    "backgroundPosY": -357,
     "category": 6,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Drake Skin",
-    "backgroundPosX": -357,
-    "backgroundPosY": -357,
     "category": 6,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Boots Materials",
-    "backgroundPosX": -533,
-    "backgroundPosY": -357,
     "category": 6,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Boots",
-    "backgroundPosX": -445,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Hat Materials",
-    "backgroundPosX": -709,
-    "backgroundPosY": -357,
     "category": 2,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Hat",
-    "backgroundPosX": -621,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Tunic Materials",
-    "backgroundPosX": -885,
-    "backgroundPosY": -357,
     "category": 2,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Dream Tunic",
-    "backgroundPosX": -797,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Earth Archon Egg",
-    "backgroundPosX": -973,
-    "backgroundPosY": -357,
     "category": 14,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Earth Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Earth Moraine",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -357,
     "category": 15,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ebony Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ebony Plank",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -357,
     "category": 7,
     "priority": 37,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Egg Harness",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -269,
     "category": 14,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Electrum Plate",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -357,
     "category": 10,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Elm Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Elm Plank",
-    "backgroundPosX": -181,
-    "backgroundPosY": -445,
     "category": 7,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Faded Page",
-    "backgroundPosX": -269,
-    "backgroundPosY": -445,
     "category": 11,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Fire Archon Egg",
-    "backgroundPosX": -357,
-    "backgroundPosY": -445,
     "category": 14,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Fire Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Firefly Elytron",
-    "backgroundPosX": -445,
-    "backgroundPosY": -445,
     "category": 1,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Flint Stone",
-    "backgroundPosX": -533,
-    "backgroundPosY": -445,
     "category": 15,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Frayed Chef's Belt",
-    "backgroundPosX": -5,
-    "backgroundPosY": -269,
-    "category": 4,
-    "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Gagaroon Luck-die",
-    "backgroundPosX": -621,
-    "backgroundPosY": -445,
     "category": 11,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Gloom Purple Dye",
-    "backgroundPosX": -709,
-    "backgroundPosY": -445,
-    "category": 3,
-    "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Gnat Wing",
-    "backgroundPosX": -797,
-    "backgroundPosY": -445,
     "category": 1,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Goblin Mask",
-    "backgroundPosX": -885,
-    "backgroundPosY": -445,
     "category": 11,
     "priority": 33,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Gold Dust",
-    "backgroundPosX": -973,
-    "backgroundPosY": -445,
     "category": 10,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Gold Gobcog",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -445,
     "category": 11,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Gold Nugget",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -445,
     "category": 10,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Goobbue Grey Dye",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -445,
-    "category": 3,
-    "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Goobbue Skin",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -445,
     "category": 6,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 2 Carbonized Matter",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 11,
     "priority": 41,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 2 Clear Prism",
-    "backgroundPosX": -533,
-    "backgroundPosY": -269,
     "category": 11,
     "priority": 37,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 3 Carbonized Matter",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 11,
     "priority": 42,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 3 Clear Prism",
-    "backgroundPosX": -533,
-    "backgroundPosY": -269,
     "category": 11,
     "priority": 38,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 4 Carbonized Matter",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 11,
     "priority": 43,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 4 Clear Prism",
-    "backgroundPosX": -533,
-    "backgroundPosY": -269,
     "category": 11,
     "priority": 39,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 5 Carbonized Matter",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 11,
     "priority": 44,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grade 5 Clear Prism",
-    "backgroundPosX": -533,
-    "backgroundPosY": -269,
     "category": 11,
     "priority": 40,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Greasy Half Apron",
-    "backgroundPosX": -181,
-    "backgroundPosY": -269,
-    "category": 4,
-    "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Green Archon Egg",
-    "backgroundPosX": -5,
-    "backgroundPosY": -533,
     "category": 14,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Green Bombard Ash",
-    "backgroundPosX": -93,
-    "backgroundPosY": -533,
     "category": 14,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Green Drop",
-    "backgroundPosX": -181,
-    "backgroundPosY": -533,
     "category": 9,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Green Tinolqa Slag",
-    "backgroundPosX": -269,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 33,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grey Abalathian Slag",
-    "backgroundPosX": -357,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 41,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grey Mor Dhonan Slag",
-    "backgroundPosX": -445,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 46,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grey O'Ghomoro Slag",
-    "backgroundPosX": -533,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grey Sagolii Slag",
-    "backgroundPosX": -621,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 31,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Grey Tinolqa Slag",
-    "backgroundPosX": -709,
-    "backgroundPosY": -533,
     "category": 15,
     "priority": 36,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Halatali Yellow Dye",
-    "backgroundPosX": -797,
-    "backgroundPosY": -533,
-    "category": 3,
-    "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Heart Chocolate",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -5,
     "category": 9,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Heavy Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -709,
     "category": 9,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hedgemole Spine",
-    "backgroundPosX": -885,
-    "backgroundPosY": -533,
     "category": 1,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hellhound Fang",
-    "backgroundPosX": -973,
-    "backgroundPosY": -533,
     "category": 1,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hellhound Hide",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -533,
     "category": 6,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hippogryph Talon",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -533,
     "category": 1,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hog Hide",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -533,
     "category": 6,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Hourglass Biscuit",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -533,
     "category": 9,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ice Archon Egg",
-    "backgroundPosX": -5,
-    "backgroundPosY": -621,
     "category": 14,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ice Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ice Moraine",
-    "backgroundPosX": -93,
-    "backgroundPosY": -621,
     "category": 15,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Indigo Quartz",
-    "backgroundPosX": -181,
-    "backgroundPosY": -621,
     "category": 15,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Intelligence Materia VI",
-    "backgroundPosX": -357,
-    "backgroundPosY": -709,
     "category": 8,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Iron Amalj'ok",
-    "backgroundPosX": -269,
-    "backgroundPosY": -621,
     "category": 11,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ixali Ebonknot",
-    "backgroundPosX": -357,
-    "backgroundPosY": -621,
     "category": 11,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ixali Mapleknot",
-    "backgroundPosX": -445,
-    "backgroundPosY": -621,
     "category": 11,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ixali Willowknot",
-    "backgroundPosX": -533,
-    "backgroundPosY": -621,
     "category": 11,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Jackal Fang",
-    "backgroundPosX": -621,
-    "backgroundPosY": -621,
     "category": 1,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Jackal Hide",
-    "backgroundPosX": -709,
-    "backgroundPosY": -621,
     "category": 6,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Kabuto Mask",
-    "backgroundPosX": -797,
-    "backgroundPosY": -621,
     "category": 16,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ladybug Elytron",
-    "backgroundPosX": -885,
-    "backgroundPosY": -621,
     "category": 1,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lauan Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lauan Log",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -621,
     "category": 7,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lauan Lumber",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -621,
     "category": 7,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lauan Plank",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -621,
     "category": 7,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lightning Archon Egg",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -621,
     "category": 14,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lightning Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lindwurm Skin",
-    "backgroundPosX": -5,
-    "backgroundPosY": -709,
     "category": 6,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Lunar Curtain",
-    "backgroundPosX": -93,
-    "backgroundPosY": -709,
     "category": 12,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mahogany Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mahogany Plank",
-    "backgroundPosX": -269,
-    "backgroundPosY": -709,
     "category": 7,
     "priority": 34,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Maple Plank",
-    "backgroundPosX": -445,
-    "backgroundPosY": -709,
     "category": 7,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Marmot Pelt",
-    "backgroundPosX": -533,
-    "backgroundPosY": -709,
     "category": 6,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Midnight Archon Egg",
-    "backgroundPosX": -621,
-    "backgroundPosY": -709,
     "category": 14,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Bow",
-    "backgroundPosX": -709,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Gorget",
-    "backgroundPosX": -797,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Helm",
-    "backgroundPosX": -885,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Leggings",
-    "backgroundPosX": -973,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Longboots",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Poultice",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 28,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Rations",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 29,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Militia Sword",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -709,
     "category": 11,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mind Materia VI",
-    "backgroundPosX": -357,
-    "backgroundPosY": -709,
     "category": 8,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mission Ceruleum Voucher",
-    "backgroundPosX": -93,
-    "backgroundPosY": -797,
     "category": 11,
     "priority": 36,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mission Ceruleum",
-    "backgroundPosX": -5,
-    "backgroundPosY": -797,
     "category": 11,
     "priority": 35,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Miter Shell",
-    "backgroundPosX": -181,
-    "backgroundPosY": -797,
     "category": 13,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Mizzenmast Biscuit",
-    "backgroundPosX": -269,
-    "backgroundPosY": -797,
     "category": 9,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Moon Nut",
-    "backgroundPosX": -357,
-    "backgroundPosY": -797,
     "category": 5,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Moss Green Dye",
-    "backgroundPosX": -445,
-    "backgroundPosY": -797,
-    "category": 3,
-    "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Nakki Leather",
-    "backgroundPosX": -533,
-    "backgroundPosY": -797,
     "category": 6,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Nakki Skin",
-    "backgroundPosX": -621,
-    "backgroundPosY": -797,
     "category": 6,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Nanapasi's Happy Smile Super Wish Bag",
-    "backgroundPosX": -709,
-    "backgroundPosY": -797,
     "category": 14,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Navigator's Ear",
-    "backgroundPosX": -797,
-    "backgroundPosY": -797,
     "category": 13,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Nephrite",
-    "backgroundPosX": -885,
-    "backgroundPosY": -797,
     "category": 15,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Nether Newt",
-    "backgroundPosX": -973,
-    "backgroundPosY": -797,
     "category": 13,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Oak Plank",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -797,
     "category": 7,
     "priority": 32,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Over-aspected Crystal",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -797,
     "category": 9,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Paramour Barding",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -445,
     "category": 0,
     "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Peach Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Peperoon Fate-die",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -797,
     "category": 11,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Pine Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Pine Plank",
-    "backgroundPosX": -93,
-    "backgroundPosY": -885,
     "category": 7,
     "priority": 31,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Poison Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -797,
     "category": 9,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Powdered Sugar",
-    "backgroundPosX": -181,
-    "backgroundPosY": -885,
     "category": 5,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Pristine Archon Egg",
-    "backgroundPosX": -269,
-    "backgroundPosY": -885,
     "category": 14,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Pure Heart Chocolate",
-    "backgroundPosX": -357,
-    "backgroundPosY": -885,
     "category": 9,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Purple Drop",
-    "backgroundPosX": -445,
-    "backgroundPosY": -885,
     "category": 9,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Purple Sagolii Slag",
-    "backgroundPosX": -533,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 28,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ququroon Doom-die",
-    "backgroundPosX": -621,
-    "backgroundPosY": -885,
     "category": 11,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Earth Moraine",
-    "backgroundPosX": -709,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Earth",
-    "backgroundPosX": -797,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Fire",
-    "backgroundPosX": -885,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Ice",
-    "backgroundPosX": -973,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Lightning",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Water",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Eye of Wind",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Ice Moraine",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -885,
     "category": 15,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Water Moraine",
-    "backgroundPosX": -5,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Radiant Wind Moraine",
-    "backgroundPosX": -93,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Raptor Talon",
-    "backgroundPosX": -181,
-    "backgroundPosY": -973,
     "category": 1,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rat Pelt",
-    "backgroundPosX": -269,
-    "backgroundPosY": -973,
     "category": 6,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ratstool",
-    "backgroundPosX": -357,
-    "backgroundPosY": -973,
     "category": 5,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rattan Lumber",
-    "backgroundPosX": -445,
-    "backgroundPosY": -973,
     "category": 7,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Raw Urushi",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -181,
     "category": 16,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red Abalathian Slag",
-    "backgroundPosX": -533,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 38,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red Archon Egg",
-    "backgroundPosX": -621,
-    "backgroundPosY": -973,
     "category": 14,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red Bombard Ash",
-    "backgroundPosX": -709,
-    "backgroundPosY": -973,
     "category": 14,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red Drop",
-    "backgroundPosX": -797,
-    "backgroundPosY": -973,
     "category": 9,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red Mor Dhonan Slag",
-    "backgroundPosX": -885,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 43,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Red O'Ghomoro Slag",
-    "backgroundPosX": -973,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Resin",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -973,
     "category": 12,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "River Sand",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -973,
     "category": 15,
     "priority": 48,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Roost Biscuit",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -973,
     "category": 9,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rope",
-    "backgroundPosX": -5,
-    "backgroundPosY": -1061,
     "category": 11,
     "priority": 30,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rosewood Plank",
-    "backgroundPosX": -93,
-    "backgroundPosY": -1061,
     "category": 7,
     "priority": 36,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rubber Band",
-    "backgroundPosX": -181,
-    "backgroundPosY": -1061,
     "category": 12,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Rubber Sole",
-    "backgroundPosX": -269,
-    "backgroundPosY": -1061,
     "category": 16,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Salamander Tail",
-    "backgroundPosX": -357,
-    "backgroundPosY": -1061,
     "category": 5,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Scallop Shell",
-    "backgroundPosX": -445,
-    "backgroundPosY": -1061,
     "category": 13,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sea Sand",
-    "backgroundPosX": -533,
-    "backgroundPosY": -1061,
     "category": 15,
     "priority": 49,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silence Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -885,
     "category": 9,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Dust",
-    "backgroundPosX": -621,
-    "backgroundPosY": -1061,
     "category": 10,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Gobcog",
-    "backgroundPosX": -709,
-    "backgroundPosY": -1061,
     "category": 11,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Goblet",
-    "backgroundPosX": -797,
-    "backgroundPosY": -1061,
     "category": 11,
     "priority": 32,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Leaf",
-    "backgroundPosX": -885,
-    "backgroundPosY": -1061,
     "category": 10,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Plate",
-    "backgroundPosX": -973,
-    "backgroundPosY": -1061,
     "category": 10,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Rivets",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -1061,
     "category": 10,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Silver Usagi Kabuto",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -1061,
     "category": 4,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sleep Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -973,
     "category": 9,
     "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Slow Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -1061,
     "category": 9,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Speed Belt",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -1061,
-    "category": 0,
-    "priority": 0,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Spruce Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Spruce Plank",
-    "backgroundPosX": -5,
-    "backgroundPosY": -1149,
     "category": 7,
     "priority": 33,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Squirrel Pelt",
-    "backgroundPosX": -93,
-    "backgroundPosY": -1149,
     "category": 6,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Starlight Barding",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -357,
     "category": 14,
     "priority": 28,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Strength Materia VI",
-    "backgroundPosX": -357,
-    "backgroundPosY": -709,
     "category": 8,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Stun Ward Potion",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -1149,
     "category": 9,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sunflower Seeds",
-    "backgroundPosX": -181,
-    "backgroundPosY": -1149,
     "category": 5,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Supple Spruce Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sylphic Brownleaf",
-    "backgroundPosX": -357,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sylphic Redleaf",
-    "backgroundPosX": -445,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Sylphic Yellowleaf",
-    "backgroundPosX": -533,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-  },
-  {
-    "name": "Sylvan Silk Belt",
-    "backgroundPosX": -533,
-    "backgroundPosY": -5,
-    "category": 4,
-    "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Teak Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Teak Plank",
-    "backgroundPosX": -709,
-    "backgroundPosY": -1149,
     "category": 7,
     "priority": 35,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Thorne Dynasty Map",
-    "backgroundPosX": -797,
-    "backgroundPosY": -1149,
     "category": 14,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Titan Copperpiece",
-    "backgroundPosX": -885,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Titan Electrumpiece",
-    "backgroundPosX": -973,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Titan Mythrilpiece",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -1149,
     "category": 11,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Tortoiseshell",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -1149,
     "category": 1,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Tricorn",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -1149,
     "category": 13,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Umbral Archon Egg",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -1149,
     "category": 14,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Umbral Eye",
-    "backgroundPosX": -5,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Umbral Moraine",
-    "backgroundPosX": -93,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Uncultured Pearl",
-    "backgroundPosX": -181,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Usagi Kabuto",
-    "backgroundPosX": -269,
-    "backgroundPosY": -1237,
     "category": 4,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Vibrant Archon Egg",
-    "backgroundPosX": -357,
-    "backgroundPosY": -1237,
     "category": 14,
     "priority": 4,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Violet Archon Egg",
-    "backgroundPosX": -445,
-    "backgroundPosY": -1237,
     "category": 14,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Vitality Materia VI",
-    "backgroundPosX": -357,
-    "backgroundPosY": -709,
     "category": 8,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Vulture Feather",
-    "backgroundPosX": -533,
-    "backgroundPosY": -1237,
     "category": 2,
     "priority": 5,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Walnut Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Walnut Plank",
-    "backgroundPosX": -709,
-    "backgroundPosY": -1237,
     "category": 7,
     "priority": 30,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Water Archon Egg",
-    "backgroundPosX": -797,
-    "backgroundPosY": -1237,
     "category": 14,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Water Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Water Moraine",
-    "backgroundPosX": -885,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Weevil Elytron",
-    "backgroundPosX": -973,
-    "backgroundPosY": -1237,
     "category": 1,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wet Bombard Ash",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -1237,
     "category": 14,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "White Abalathian Slag",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 42,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "White Chocolate",
-    "backgroundPosX": -357,
-    "backgroundPosY": -885,
     "category": 9,
     "priority": 1,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "White Drop",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -1237,
     "category": 9,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "White Mor Dhonan Slag",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -1237,
     "category": 15,
     "priority": 47,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "White Quartz",
-    "backgroundPosX": -5,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Willow Branch",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 10,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Willow Log",
-    "backgroundPosX": -181,
-    "backgroundPosY": -1325,
     "category": 7,
     "priority": 6,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Willow Lumber",
-    "backgroundPosX": -269,
-    "backgroundPosY": -1325,
     "category": 7,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Willow Plank",
-    "backgroundPosX": -357,
-    "backgroundPosY": -1325,
     "category": 7,
     "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wind Archon Egg",
-    "backgroundPosX": -445,
-    "backgroundPosY": -1325,
     "category": 14,
     "priority": 9,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wind Materia VI",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
     "category": 8,
     "priority": 3,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wind Moraine",
-    "backgroundPosX": -533,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 8,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wolf Hide",
-    "backgroundPosX": -621,
-    "backgroundPosY": -1325,
     "category": 6,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Wolf Leather",
-    "backgroundPosX": -709,
-    "backgroundPosY": -1325,
     "category": 6,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Years-old Pumpkin Cookie",
-    "backgroundPosX": -181,
-    "backgroundPosY": -357,
     "category": 9,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow Archon Egg",
-    "backgroundPosX": -885,
-    "backgroundPosY": -1325,
     "category": 14,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow Drop",
-    "backgroundPosX": -973,
-    "backgroundPosY": -1325,
     "category": 9,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow Mor Dhonan Slag",
-    "backgroundPosX": -1061,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 45,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow O'Ghomoro Slag",
-    "backgroundPosX": -1149,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow Sagolii Slag",
-    "backgroundPosX": -1237,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 30,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yellow Tinolqa Slag",
-    "backgroundPosX": -1325,
-    "backgroundPosY": -1325,
     "category": 15,
     "priority": 35,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Yew Plank",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -5,
     "category": 7,
     "priority": 28,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Young Indigo Herring",
-    "backgroundPosX": -1413,
-    "backgroundPosY": -93,
     "category": 13,
     "priority": 2,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Alesone's Songbow",
-    "backgroundPosX": -5,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 11,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Aubriest's Allegory",
-    "backgroundPosX": -93,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 12,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Aubriest's Whisper",
-    "backgroundPosX": -181,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 13,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Blessed Earrings",
-    "backgroundPosX": -269,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 40,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Blessed Ring",
-    "backgroundPosX": -357,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 41,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Chiran Zabran's Tempest",
-    "backgroundPosX": -445,
-    "backgroundPosY": -5,
     "category": 4,
     "priority": 14,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Bandana",
-    "backgroundPosX": -93,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 20,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
-  },
-  {
-    "name": "Explorer's Belt",
-    "backgroundPosX": -181,
-    "backgroundPosY": -93,
-    "category": 4,
-    "priority": 24,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Breeches",
-    "backgroundPosX": -269,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 25,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Calot",
-    "backgroundPosX": -357,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 21,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Choker",
-    "backgroundPosX": -445,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 43,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Earrings",
-    "backgroundPosX": -5,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 42,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Moccasins",
-    "backgroundPosX": -93,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 26,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Ring",
-    "backgroundPosX": -181,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 44,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Sabatons",
-    "backgroundPosX": -269,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 27,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Tabard",
-    "backgroundPosX": -357,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 22,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Explorer's Tunic",
-    "backgroundPosX": -445,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 23,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Gerbald's Redspike",
-    "backgroundPosX": -93,
-    "backgroundPosY": -269,
     "category": 4,
     "priority": 15,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Chausses",
-    "backgroundPosX": -269,
-    "backgroundPosY": -269,
     "category": 4,
     "priority": 31,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Choker",
-    "backgroundPosX": -357,
-    "backgroundPosY": -269,
     "category": 4,
     "priority": 46,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Earrings",
-    "backgroundPosX": -445,
-    "backgroundPosY": -269,
     "category": 4,
     "priority": 45,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Halfgloves",
-    "backgroundPosX": -5,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 29,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Halfrobe",
-    "backgroundPosX": -93,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 28,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Pattens",
-    "backgroundPosX": -181,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 32,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Mage's Ring",
-    "backgroundPosX": -269,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 47,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
-  },
-  {
-    "name": "Mage's Rope Belt",
-    "backgroundPosX": -357,
-    "backgroundPosY": -357,
-    "category": 4,
-    "priority": 30,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Red Onion Helm",
-    "backgroundPosX": -445,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 33,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
-  },
-  {
-    "name": "Scarlet Sash",
-    "backgroundPosX": -5,
-    "backgroundPosY": -445,
-    "category": 4,
-    "priority": 35,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Sibold's Reach",
-    "backgroundPosX": -93,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 16,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Spiked Armguards",
-    "backgroundPosX": -181,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 34,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Stonewall Choker",
-    "backgroundPosX": -269,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 49,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Stonewall Earrings",
-    "backgroundPosX": -357,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 48,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Stonewall Ring",
-    "backgroundPosX": -445,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 50,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Symon's Honeyclaws",
-    "backgroundPosX": -533,
-    "backgroundPosY": -93,
     "category": 4,
     "priority": 17,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Thormoen's Pride",
-    "backgroundPosX": -533,
-    "backgroundPosY": -181,
     "category": 4,
     "priority": 18,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Thormoen's Purpose",
-    "backgroundPosX": -533,
-    "backgroundPosY": -269,
     "category": 4,
     "priority": 19,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Thormoen's Subligar",
-    "backgroundPosX": -533,
-    "backgroundPosY": -357,
     "category": 4,
     "priority": 36,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Veteran's Acton",
-    "backgroundPosX": -533,
-    "backgroundPosY": -445,
     "category": 4,
     "priority": 38,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
-  },
-  {
-    "name": "Veteran's Field Belt",
-    "backgroundPosX": -5,
-    "backgroundPosY": -533,
-    "category": 4,
-    "priority": 39,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Veteran's Pot Helm",
-    "backgroundPosX": -93,
-    "backgroundPosY": -533,
     "category": 4,
     "priority": 37,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false }),
-    "secondSheet": true
+    "quantity": 0
   },
   {
     "name": "Roast Dodo",
     "id": 4649,
-    "localIcon": "assets/images/legacy-extra/4649.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4649.png",
     "category": 9,
     "priority": 28,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Snowflake Peak",
     "id": 4729,
-    "localIcon": "assets/images/legacy-extra/4729.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4729.png",
     "category": 9,
     "priority": 29,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Zoni",
     "id": 4680,
-    "localIcon": "assets/images/legacy-extra/4680.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4680.png",
     "category": 9,
     "priority": 30,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Princess Pudding",
     "id": 4740,
-    "localIcon": "assets/images/legacy-extra/4740.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4740.png",
     "category": 9,
     "priority": 31,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Sweet Rice Cake",
     "id": 4744,
-    "localIcon": "assets/images/legacy-extra/4744.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4744.png",
     "category": 9,
     "priority": 32,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Redtide Psashp",
     "id": 5838,
-    "localIcon": "assets/images/legacy-extra/5838.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/5838.png",
     "category": 11,
     "priority": 46,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Goldtide Psashp",
     "id": 5839,
-    "localIcon": "assets/images/legacy-extra/5839.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/5839.png",
     "category": 11,
     "priority": 47,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Greentide Psashp",
     "id": 5837,
-    "localIcon": "assets/images/legacy-extra/5837.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/5837.png",
     "category": 11,
     "priority": 48,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Crownbrush",
     "id": 17689,
-    "localIcon": "assets/images/legacy-extra/17689.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/17689.png",
     "category": 5,
     "priority": 7,
-    "quantity": 0,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "quantity": 0
   },
   {
     "name": "Ore Fruitcake",
     "id": 4741,
-    "localIcon": "assets/images/legacy-extra/4741.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4741.png",
     "category": 9,
     "priority": 33,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
   },
   {
     "name": "Starlight Log",
     "id": 4742,
-    "localIcon": "assets/images/legacy-extra/4742.png",
-    "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/4742.png",
     "category": 9,
     "priority": 34,
     "quantity": 0,
-    "hqOnly": true,
-    "isOwned": (function (a) { return this.quantity > 0 ? true : false })
+    "hqOnly": true
+  },
+  {
+    "name": "Spriggan Chocolate",
+    "id": 22431,
+    "category": 9,
+    "priority": 35,
+    "quantity": 0
   }
-,
-{
-  "name": "Spriggan Chocolate",
-  "id": 22431,
-  "localIcon": "assets/images/legacy-extra/22431.png",
-  "remoteIcon": "https://universalis-ffxiv.github.io/universalis-assets/icon2x/22431.png",
-  "category": 9,
-  "priority": 35,
-  "quantity": 0,
-  "isOwned": (function (a) { return this.quantity > 0 ? true : false })
-}
-
 ];

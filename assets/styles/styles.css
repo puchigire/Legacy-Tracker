@@ -71,7 +71,7 @@ li {
 
 button {
     background: rgba(0, 0, 0, 0);
-    background-image: url('../images/blank.png');
+    background-image: none;
     color: #a5afaa;
     border: 3.5px solid transparent;
     border-radius: .6em;
